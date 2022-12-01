@@ -1,0 +1,14 @@
+﻿<Application x:Class="UchebnayaPraktika.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:UchebnayaPraktika"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="StackPanel" x:Key="TopSP">
+            <Setter Property="Background" Value="#FFB5D5CA"></Setter>
+        </Style>
+        <Style TargetType="StackPanel" x:Key="BottomSP">
+            <Setter Property="Background" Value="#FFE0A9AF"></Setter>
+        </Style>
+    </Application.Resources>
+</Application>
