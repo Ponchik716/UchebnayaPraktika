@@ -18,8 +18,9 @@
             <TextBlock>Запомнить меня</TextBlock>
             <CheckBox IsChecked="True" x:Name="SaveCb" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
             <StackPanel>
-                <Button x:Name="LoginBTN" Margin="5" Click="LoginBTN_Click" Width="200">Войти</Button>
-                <Button x:Name="Auth1BTN" Margin="5" Click="RegistrBTN_Click" Width="200">Зарегестрироваться</Button>
+                <Button x:Name="LoginBTN" Margin="5" Click="LoginBTN_Click" Width="200" Style="{StaticResource Enter}">Войти</Button>
+                <Button x:Name="Auth1BTN" Margin="5" Click="RegistrBTN_Click" Width="200" Style="{StaticResource Enter}">Зарегестрироваться</Button>
+                <Button></Button>
             </StackPanel>
 
         </StackPanel>

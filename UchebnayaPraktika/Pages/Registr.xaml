@@ -15,8 +15,8 @@
             <TextBlock>Пароль</TextBlock>
             <PasswordBox x:Name="PasswordTb" Margin="15" Width="200"></PasswordBox>
             <StackPanel>
-                <Button x:Name="AuthBTN" Margin="5" Click="AuthBTN_Click" Width="200">Регистрация</Button>
-                <Button x:Name="CleanBTN" Margin="5" Click="CleanBTN_Click" Width="200">Очистить</Button>
+                <Button x:Name="AuthBTN" Margin="5" Click="AuthBTN_Click" Width="200" Style="{StaticResource Enter}">Регистрация</Button>
+                <Button x:Name="CleanBTN" Margin="5" Click="CleanBTN_Click" Width="200" Style="{StaticResource Enter}">Очистить</Button>
             </StackPanel>
         </StackPanel>
     </Grid>
