@@ -10,17 +10,17 @@
 
     <Grid>
         <StackPanel Orientation="Vertical"  VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock FontFamily="White" FontSize="20" Margin="10" Width="200">Авторизация</TextBlock>
-            <TextBlock  FontFamily="White" FontSize="15" Margin="10">Логин</TextBlock>
+            <TextBlock FontFamily="White" FontSize="20" Margin="10" Width="200" Style="{StaticResource Text}">Авторизация</TextBlock>
+            <TextBlock  FontFamily="White" FontSize="15" Margin="10" Style="{StaticResource Text}">Логин</TextBlock>
             <TextBox x:Name="LoginTb" Margin="5"></TextBox>
-            <TextBlock FontFamily="White" FontSize="15" Margin="10">Пароль</TextBlock>
+            <TextBlock FontFamily="White" FontSize="15" Margin="10" Style="{StaticResource Text}">Пароль</TextBlock>
             <PasswordBox x:Name="PasswordTb"  Margin="5"></PasswordBox>
-            <TextBlock>Запомнить меня</TextBlock>
+            <TextBlock Style="{StaticResource Text}">Запомнить меня</TextBlock>
             <CheckBox IsChecked="True" x:Name="SaveCb" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
             <StackPanel>
-                <Button x:Name="LoginBTN" Margin="5" Click="LoginBTN_Click" Width="200" Style="{StaticResource Enter}">Войти</Button>
-                <Button x:Name="Auth1BTN" Margin="5" Click="RegistrBTN_Click" Width="200" Style="{StaticResource Enter}">Зарегестрироваться</Button>
-                <Button></Button>
+                <Button x:Name="LoginBTN" Margin="5" Click="LoginBTN_Click" Width="200" Style="{StaticResource Button}">Войти</Button>
+                <Button x:Name="Auth1BTN" Margin="5" Click="RegistrBTN_Click" Width="200" Style="{StaticResource Button}">Зарегестрироваться</Button>
+               
             </StackPanel>
 
         </StackPanel>

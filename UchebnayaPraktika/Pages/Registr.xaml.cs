@@ -31,7 +31,10 @@ namespace UchebnayaPraktika.Pages
         {
             string login = LoginTb.Text.Trim();
             string password = PasswordTb.Password.Trim();
-            if (login.Length > 0 && password.Length > 0)
+            string surname = SurnameTb.Text.Trim();
+            string name = NameTb.Text.Trim();
+            string patronymic = PatronymicTb.Text.Trim();
+            if (login.Length > 0 && (password.Length >= 6 && PasswordTb.Password.Any(char.IsUpper) && PasswordTb.Password.Any(char.IsNumber) && (PasswordTb.Password.Contains('!') || PasswordTb.Password.Contains('@') || PasswordTb.Password.Contains('#') || PasswordTb.Password.Contains('%'))))
             {
                 try
                 {
@@ -39,7 +42,10 @@ namespace UchebnayaPraktika.Pages
                     {
                         Login = login,
                         Password = password,
-                        RoleId = 2
+                        RoleId = 1,
+                        Surname = surname,
+                        Name = name,
+                        Patronymic = patronymic
                     };
                     DbConnect.db.User.Add(user);
                     DbConnect.db.SaveChanges();

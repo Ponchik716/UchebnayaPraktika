@@ -9,14 +9,24 @@
       Title="Registr">
 
     <Grid>
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock>Логин</TextBlock>
-            <TextBox x:Name="LoginTb" Margin="15" Width="200"></TextBox>
-            <TextBlock>Пароль</TextBlock>
-            <PasswordBox x:Name="PasswordTb" Margin="15" Width="200"></PasswordBox>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
             <StackPanel>
-                <Button x:Name="AuthBTN" Margin="5" Click="AuthBTN_Click" Width="200" Style="{StaticResource Enter}">Регистрация</Button>
-                <Button x:Name="CleanBTN" Margin="5" Click="CleanBTN_Click" Width="200" Style="{StaticResource Enter}">Очистить</Button>
+                <TextBlock Style="{StaticResource Text}">Фамилия</TextBlock>
+                <TextBox x:Name="SurnameTb" Margin="15" Width="200"></TextBox>
+                <TextBlock Style="{StaticResource Text}">Имя</TextBlock>
+                <TextBox x:Name="NameTb" Margin="15" Width="200"></TextBox>
+                <TextBlock Style="{StaticResource Text}">Отчество</TextBlock>
+                <TextBox x:Name="PatronymicTb" Margin="15" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Style="{StaticResource Text}">Логин</TextBlock>
+                <TextBox x:Name="LoginTb" Margin="15" Width="200"></TextBox>
+                <TextBlock Style="{StaticResource Text}">Пароль</TextBlock>
+                <PasswordBox x:Name="PasswordTb" Margin="15" Width="200"></PasswordBox>
+                <StackPanel>
+                    <Button x:Name="AuthBTN" Margin="5" Click="AuthBTN_Click" Width="200" Style="{StaticResource Button}" Content="Регистрация"></Button>
+                    <Button x:Name="CleanBTN" Margin="5" Click="CleanBTN_Click" Width="200" Style="{StaticResource Button}"></Button>
+                </StackPanel>
             </StackPanel>
         </StackPanel>
     </Grid>

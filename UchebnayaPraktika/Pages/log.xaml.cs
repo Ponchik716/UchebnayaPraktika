@@ -45,6 +45,7 @@ namespace UchebnayaPraktika.Pages
                 }
               
             }
+            Navigation.NextPage(new ProductListPage());
         }
 
         private void RegistrBTN_Click(object sender, RoutedEventArgs e)

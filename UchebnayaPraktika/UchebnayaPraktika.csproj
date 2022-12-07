@@ -139,10 +139,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\MainPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\Registr.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -155,9 +151,6 @@
   <ItemGroup>
     <Compile Include="Pages\log.xaml.cs">
       <DependentUpon>log.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Registr.xaml.cs">
       <DependentUpon>Registr.xaml</DependentUpon>
@@ -206,6 +199,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Img\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
